@@ -5,7 +5,7 @@
 
     <groupId>demibenari</groupId>
     <artifactId>configuration</artifactId>
-    <version>1.0</version>
+    <version>1.0-SNAPSHOT</version>
     <name>Demi Root Project</name>
     <packaging>pom</packaging>
 
@@ -16,6 +16,20 @@
         <module>child-2</module>
         <module>child-3</module>
     </modules>
+
+    <distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <name>Internal Releases</name>
+            <url>http://54.69.206.179:8081/nexus/content/repositories/windward-releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus</id>
+            <name>Internal Releases</name>
+            <url>http://54.69.206.179:8081/nexus/content/repositories/windward-snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
 
 </project>
 
